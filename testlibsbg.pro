@@ -23,10 +23,29 @@ INCLUDEPATH += ../common_posar
 
 DEPENDPATH += ../libsbg
 INCLUDEPATH += ../libsbg
-LIBS += -L../libsbg/debug -llibsbg
+LIBS += -L../libsbg -llibsbg
+
+#######
+#######
+## UNIX
+#######
+#######
+
+unix{
+    INCLUDEPATH += \
+        "/opt/SBG/InertialSDK_Unix_v3.5.0/Software Development/sbgECom/src" \
+        "/opt/SBG/InertialSDK_Unix_v3.5.0/Software Development/sbgECom/common"
+}
+
+########
+########
+## WIN32
+########
+########
 
 win32{
 INCLUDEPATH += \
     "C:/SBG/Ekinox/Software Development/sbgECom/src" \
     "C:/SBG/Ekinox/Software Development/sbgECom/common"
 }
+
