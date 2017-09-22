@@ -19,7 +19,7 @@ HEADERS  += testlibsbg.h
 
 FORMS    += testlibsbg.ui
 
-INCLUDEPATH += ../common_posar
+INCLUDEPATH += ../../POSAR-MC/common_posar
 
 DEPENDPATH += ../libsbg
 INCLUDEPATH += ../libsbg
@@ -33,8 +33,8 @@ LIBS += -L../libsbg -llibsbg
 
 unix{
     INCLUDEPATH += \
-        "/opt/SBG/InertialSDK_Unix_v3.5.0/Software Development/sbgECom/src" \
-        "/opt/SBG/InertialSDK_Unix_v3.5.0/Software Development/sbgECom/common"
+        "/opt/InertialSDK_Unix_v3.5.0/Software Development/sbgECom/src" \
+        "/opt/InertialSDK_Unix_v3.5.0/Software Development/sbgECom/common"
 }
 
 ########

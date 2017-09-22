@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'testlibsbg.ui'
 **
-** Created by: Qt User Interface Compiler version 5.6.1
+** Created by: Qt User Interface Compiler version 5.7.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -48,7 +48,7 @@ public:
 
     void retranslateUi(QWidget *TestLibSbg)
     {
-        TestLibSbg->setWindowTitle(QApplication::translate("TestLibSbg", "TestLibSbg", 0));
+        TestLibSbg->setWindowTitle(QApplication::translate("TestLibSbg", "TestLibSbg", Q_NULLPTR));
     } // retranslateUi
 
 };
