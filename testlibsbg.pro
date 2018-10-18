@@ -19,10 +19,11 @@ HEADERS  += testlibsbg.h
 
 FORMS    += testlibsbg.ui
 
-INCLUDEPATH += ../../POSAR-MC/common_posar
+INCLUDEPATH += ../../POSAR-MC/common_posar \
+                $$[QT_INSTALL_HEADERS]/common_ple/sbg
 
-DEPENDPATH += ../libsbg
-INCLUDEPATH += ../libsbg
+#DEPENDPATH += ../libsbg
+#INCLUDEPATH += ../libsbg
 LIBS += -L../libsbg -llibsbg
 
 #######

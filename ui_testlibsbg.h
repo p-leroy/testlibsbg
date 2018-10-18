@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'testlibsbg.ui'
 **
-** Created by: Qt User Interface Compiler version 5.7.1
+** Created by: Qt User Interface Compiler version 5.11.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,11 +10,8 @@
 #define UI_TESTLIBSBG_H
 
 #include <QtCore/QVariant>
-#include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QGridLayout>
-#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QWidget>
 #include "sbgreadfile.h"
 
@@ -48,7 +45,7 @@ public:
 
     void retranslateUi(QWidget *TestLibSbg)
     {
-        TestLibSbg->setWindowTitle(QApplication::translate("TestLibSbg", "TestLibSbg", Q_NULLPTR));
+        TestLibSbg->setWindowTitle(QApplication::translate("TestLibSbg", "TestLibSbg", nullptr));
     } // retranslateUi
 
 };
