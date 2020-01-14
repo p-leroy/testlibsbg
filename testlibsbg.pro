@@ -26,10 +26,6 @@ FORMS    += testlibsbg.ui
 #######
 
 unix{
-    INCLUDEPATH += \
-        "/opt/InertialSDK_Unix_v3.5.0/Software Development/sbgECom/src" \
-        "/opt/InertialSDK_Unix_v3.5.0/Software Development/sbgECom/common" \
-
     LIBS += -L../libsbg -llibsbg
 
     INCLUDEPATH += ../../POSAR-MC/common_posar \
@@ -43,17 +39,13 @@ unix{
 ########
 
 win32{
-INCLUDEPATH += \
-    "../common_posar" \
-    "C:\Users\meric\Documents\DEV_mordiama\sbgECom\src" \
-    "C:\Users\meric\Documents\DEV_mordiama\sbgECom\common" \
-    "C:\Users\meric\Documents\DEV_mordiama\libsbg"
+    SBGPATH = "C:\Program Files\SBG Systems\Inertial SDK\Software Development"
+    INCLUDEPATH += \
+        $$SBGPATH/sbgECom/src \
+        $$SBGPATH/sbgECom/common
+    INCLUDEPATH += \
+        ../../lib/include/common_ple/sbg \
+        ../../lib/include/common_ple/message_ple
 
-DEPENDPATH += \
-    "C:\Users\meric\Documents\DEV_mordiama\build-libsbg-Desktop_Qt_5_9_2_MSVC2013_64bit-Debug\debug" \
-    "C:\Qt\5.9.2\msvc2013_64\bin"
-
-LIBS += \
-    "C:\Users\meric\Documents\DEV_mordiama\build-libsbg-Desktop_Qt_5_9_2_MSVC2013_64bit-Debug\debug\libsbg.lib"
+    LIBS += -L../../lib/bin -llibsbg
 }
-
